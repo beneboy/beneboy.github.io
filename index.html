@@ -5,11 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="text/css">
+    .container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Make the container full height of the viewport */
+}
+    </style>
     <title>Card</title>
 </head>
 <body>
-<svg id="barcode"></svg>
+  <div class="container">
+    <div class="content">
 
+<svg id="barcode"></svg>
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
 <script src="main.js"></script>
 </body>
